@@ -1,6 +1,6 @@
 <?php
 
-namespace Kanboard\Plugin\ConvertProject\Controller;
+namespace Kanboard\Plugin\ConvertPrivate\Controller;
 
 use Kanboard\Controller\ProjectEditController;
 use Kanboard\Validator\ProjectValidator;
