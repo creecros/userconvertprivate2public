@@ -30,10 +30,10 @@ public function cp_update()
         $values['id'] = $project['id'];
         if (isset($values['is_private'])) {
                 unset($values['is_private']);
-            }
+            
         } elseif ($project['is_private'] == 1 && ! isset($values['is_private'])) {
                 $values += array('is_private' => 0);
-            }
+            
         }
         return $values;
     }
