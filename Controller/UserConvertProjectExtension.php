@@ -5,12 +5,6 @@ namespace Kanboard\Plugin\ConvertProject\Controller;
 use Kanboard\Controller\ProjectEditController;
 use Kanboard\Validator\ProjectValidator;
 
-/**
- * Project Edit Controller
- *
- * @package  Kanboard\Controller
- * @author   Frederic Guillot
- */
 class UserConvertProjectExtension extends ProjectEditController
 {
 
@@ -30,14 +24,7 @@ public function cp_update()
         }
         return $this->show($values, $errors);
     }
-    /**
-     * Prepare form values
-     *
-     * @access private
-     * @param  array  $project
-     * @param  array  $values
-     * @return array
-     */
+
     private function cp_prepareValues(array $project, array $values)
     {
         $values['id'] = $project['id'];
